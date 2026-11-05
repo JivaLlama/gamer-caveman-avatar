@@ -51,3 +51,11 @@ Also available: [WebM with alpha](assets/v1/caveman_loop.webm), [APNG](assets/v1
 ![All 14 styles](assets/styles/styles_preview_all.gif)
 
 See the **[style showcase](showcase.md)** for every variant with labels and per-state frames.
+
+## Round 2: non-pixel styles
+
+A brainstorm of 14 non-pixel looks (vector mascot, 90s cel cartoon, die-cut sticker, anime and more), with talk/blink PNGtuber loops for the top picks.
+
+<img src="assets/nonpixel/pngtuber/vector_mascot_talkblink.gif" alt="Vector mascot talk/blink" style="image-rendering:auto;max-width:300px">
+
+See **[Round 2: non-pixel styles](nonpixel.html)**.

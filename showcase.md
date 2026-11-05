@@ -4,6 +4,8 @@ title: Style showcase
 ---
 <p class="banner">⚠️ CONCEPT / PROTOTYPE: style exploration, nothing final.</p>
 
+Also see [Round 2: non-pixel styles](nonpixel.html).
+
 # Style showcase
 
 [← Back](index.md)

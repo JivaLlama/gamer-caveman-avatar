@@ -11,3 +11,5 @@ table{border-collapse:collapse}td,th{padding:.4rem;border:1px solid #333;text-al
 .badge{position:absolute;top:.5rem;right:.5rem;background:#fc3;color:#111;font-weight:bold;padding:.15rem .5rem;border-radius:4px;font-size:.8rem}
 .frames{display:flex;gap:4px;margin-top:.5rem}.frames img{width:20%;height:auto}
 img.wide{max-width:100%;height:auto;display:block;margin:1rem auto}
+.smooth img{image-rendering:auto;-ms-interpolation-mode:bicubic;max-width:100%;height:auto}
+.smooth .frames img{width:33%}

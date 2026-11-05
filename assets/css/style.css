@@ -13,3 +13,15 @@ table{border-collapse:collapse}td,th{padding:.4rem;border:1px solid #333;text-al
 img.wide{max-width:100%;height:auto;display:block;margin:1rem auto}
 .smooth img{image-rendering:auto;-ms-interpolation-mode:bicubic;max-width:100%;height:auto}
 .smooth .frames img{width:33%}
+body{max-width:1200px}
+.grid.big{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+.card.big{border-color:#fc3}
+.card img{max-width:100%;height:auto}
+.pixel img,img.pixel{image-rendering:pixelated;image-rendering:crisp-edges}
+.smooth img,img.wide:not(.pixel){image-rendering:auto}
+.links{font-size:.85rem}.updated{color:#999;font-style:italic}
+details{margin-top:2rem;background:#161616;border:1px solid #333;border-radius:6px;padding:.75rem}
+summary{cursor:pointer;font-size:1.2rem}
+.states{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.5rem}
+.states figure{margin:0;text-align:center}.states img{width:100%;height:auto}
+figcaption{font-size:.8rem;color:#aaa}

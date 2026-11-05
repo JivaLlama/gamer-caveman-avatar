@@ -1,4 +1,4 @@
 title: Gamer Caveman Avatar
 description: Concept / prototype retro pixel-art PNGtuber avatar
 baseurl: /gamer-caveman-avatar
-exclude: [build_showcase.py, README.md]
+exclude: [build_site.py, README.md, MAINTAINING.md]

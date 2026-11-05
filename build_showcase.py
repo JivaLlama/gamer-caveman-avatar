@@ -1,45 +1,45 @@
 #!/usr/bin/env python3
-"""Regenerate showcase.md from _data/styles.yml.
-Optional: --scan DIR copies <style>_<hs|bare>[_big].{gif,png} + *_sheet.png from DIR
-into assets/styles/ and appends missing entries (hs = headphones, _big = high-res).
-Pure stdlib; no network."""
-import sys, shutil, re, pathlib
+"""Regenerate showcase.md from _data/styles.yml. Pure stdlib; no network.
+Per style id, expects assets/styles/<id>/<id>_anim.gif and <state>_<frames>.png
+unless the entry sets gif/sheet explicitly."""
+import pathlib
 R = pathlib.Path(__file__).parent
-Y = R/"_data/styles.yml"
+STATES = ["idle", "blink", "talk", "talk_blink", "grin"]
 def load():
     out, cur = [], None
-    for l in Y.read_text().splitlines():
-        if l.startswith("#") or not l.strip(): continue
+    for l in (R/"_data/styles.yml").read_text().splitlines():
+        if l.lstrip().startswith("#") or not l.strip(): continue
         if l.startswith("- "): cur = {}; out.append(cur); l = l[2:]
         k, v = l.strip().split(":", 1); cur[k.strip()] = v.strip().strip('"')
     return out
-def save(st):
-    lines = ["# One entry per style. build_showcase.py regenerates showcase.md from this list."]
-    for s in st:
-        for i, (k, v) in enumerate(s.items()):
-            lines.append(("- " if i == 0 else "  ") + f'{k}: "{v}"')
-    Y.write_text("\n".join(lines) + "\n")
-def scan(d, st):
-    d = pathlib.Path(d); have = {s["id"] for s in st}; dst = R/"assets/styles"; dst.mkdir(parents=True, exist_ok=True)
-    for g in sorted(d.rglob("*.gif")):
-        m = re.match(r"(.+?)_(hs|bare)(_big)?$", g.stem)
-        sid = g.stem
-        if sid in have: continue
-        shutil.copy(g, dst/g.name)
-        sheet = next((p for p in g.parent.glob(sid + "*sheet*.png")), None)
-        if sheet: shutil.copy(sheet, dst/sheet.name)
-        st.append({"id": sid, "style": m.group(1) if m else sid,
-                   "resolution": ("high-res" if m and m.group(3) else "low-res") if m else "wildcard",
-                   "headphones": ("yes" if m.group(2) == "hs" else "no") if m else "?",
-                   "gif": f"assets/styles/{g.name}", "sheet": f"assets/styles/{sheet.name}" if sheet else ""})
+def card(s):
+    gif = s.get("gif") or f"assets/styles/{s['id']}/{s['id']}_anim.gif"
+    o = ['<div class="card">']
+    if s.get("badge"): o.append(f'<span class="badge">{s["badge"]}</span>')
+    o += [f'<img src="{gif}" alt="{s["id"]} animation">', f'<h3>{s["style"]} <code>{s["id"]}</code></h3>',
+          f'<p><b>Resolution:</b> {s["resolution"]}<br><b>Headphones:</b> {s["headphones"]}</p>',
+          f'<p class="note">{s.get("note","")}</p>']
+    if s.get("frames"):
+        o.append('<div class="frames">' + "".join(
+            f'<img src="assets/styles/{s["id"]}/{st}_{s["frames"]}.png" alt="{st}" title="{st}">' for st in STATES) + "</div>")
+    if s.get("sheet"): o.append(f'<img src="{s["sheet"]}" alt="{s["id"]} contact sheet">')
+    o.append("</div>")
+    return o
 def render(st):
     o = ["---", "layout: default", "title: Style showcase", "---",
-         '<p class="banner">⚠️ CONCEPT / PROTOTYPE</p>', "", "# Style showcase", "", "[← Back](index.md)", ""]
+         '<p class="banner">⚠️ CONCEPT / PROTOTYPE: style exploration, nothing final.</p>', "",
+         "# Style showcase", "", "[← Back](index.md)", "",
+         "All 14 style variants, animating in sync, then the labelled overview sheet.", "",
+         '<img class="wide" src="assets/styles/styles_preview_all.gif" alt="All 14 styles animating">', "",
+         '<img class="wide" src="assets/styles/styles_overview_contact_sheet.png" alt="Overview contact sheet">', ""]
+    tiers = []
     for s in st:
-        o += [f"## {s['style']}", "", f"- **Style:** {s['style']}", f"- **Resolution:** {s['resolution']}",
-              f"- **Headphones:** {s['headphones']}", "", f"![{s['id']} loop]({s['gif']})", ""]
-        if s.get("sheet"): o += [f"![{s['id']} contact sheet]({s['sheet']})", ""]
-    (R/"showcase.md").write_text("\n".join(o))
-st = load()
-if "--scan" in sys.argv: scan(sys.argv[sys.argv.index("--scan")+1], st); save(st)
-render(st)
+        if s["tier"] not in tiers: tiers.append(s["tier"])
+    for t in tiers:
+        o += [f"## {t}", "", '<div class="grid">']
+        for s in st:
+            if s["tier"] == t: o += card(s)
+        o += ["</div>", ""]
+    o.append("Per-state frames shown: idle, blink, talk, talk_blink, grin.")
+    (R/"showcase.md").write_text("\n".join(o) + "\n")
+render(load())

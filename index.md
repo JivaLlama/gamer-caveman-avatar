@@ -44,4 +44,10 @@ All are 312×320 transparent PNGs in [`assets/v1/pngtuber/`](assets/v1/pngtuber/
 
 Also available: [WebM with alpha](assets/v1/caveman_loop.webm), [APNG](assets/v1/caveman_loop.png), [native 39×40](assets/v1/caveman_native_39x40.png).
 
-See the **[style showcase](showcase.md)** for alternative looks.
+## Style round
+
+14 alternative looks, from NES 24 px to hi-bit 128 px plus wildcards, with and without the headset. SNES 64 is the current front-runner.
+
+![All 14 styles](assets/styles/styles_preview_all.gif)
+
+See the **[style showcase](showcase.md)** for every variant with labels and per-state frames.

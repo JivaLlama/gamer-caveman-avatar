@@ -4,3 +4,10 @@ img{image-rendering:pixelated;image-rendering:crisp-edges;-ms-interpolation-mode
 img.x1{width:auto}img.x2{zoom:2}img.x4{zoom:4}img.x8{zoom:8}
 table{border-collapse:collapse}td,th{padding:.4rem;border:1px solid #333;text-align:center}
 .banner{background:#a40;color:#fff;padding:.5rem;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+.card{position:relative;background:#1a1a1a;border:1px solid #333;padding:.75rem;border-radius:6px}
+.card>img{max-width:100%;height:auto;display:block;margin:auto}
+.card h3{margin:.5rem 0 .25rem;font-size:1rem}.card p{margin:.25rem 0;font-size:.9rem}.note{color:#aaa}
+.badge{position:absolute;top:.5rem;right:.5rem;background:#fc3;color:#111;font-weight:bold;padding:.15rem .5rem;border-radius:4px;font-size:.8rem}
+.frames{display:flex;gap:4px;margin-top:.5rem}.frames img{width:20%;height:auto}
+img.wide{max-width:100%;height:auto;display:block;margin:1rem auto}

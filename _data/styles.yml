@@ -1,8 +1,110 @@
-# One entry per style. build_showcase.py regenerates showcase.md from this list.
-# Paths are relative to the repo root.
+# One entry per style, in display order. build_showcase.py regenerates showcase.md from this list.
+# frames: x-scale suffix of the ~300px per-state PNGs in assets/styles/<id>/.
+- id: nes24_hs
+  style: NES 24
+  tier: NES 24
+  resolution: "26x28 native, x11"
+  headphones: "yes"
+  frames: x11
+  note: Pixel base downsampled locally to a 24 px grid.
+- id: nes24_bare
+  style: NES 24
+  tier: NES 24
+  resolution: "26x30 native, x10"
+  headphones: "no (bone necklace)"
+  frames: x10
+  note: Pixel base downsampled locally to a 24 px grid.
+- id: v1_40_hs
+  style: v1 40
+  tier: v1 40
+  resolution: "39x40 native, x8"
+  headphones: "yes"
+  frames: x8
+  note: The original v1 sprite with the headset.
+- id: v1_40_bare
+  style: v1 40
+  tier: v1 40
+  resolution: "39x40 native, x8"
+  headphones: "no (bone necklace)"
+  frames: x8
+  note: The original v1 sprite with the headset removed and a bone necklace added.
+- id: snes64_hs
+  style: SNES 64
+  tier: SNES 64
+  resolution: "64x74 native, x4"
+  headphones: "yes"
+  frames: x4
+  badge: Front-runner
+  note: 16-bit-style pixel base on a 64 px grid.
+- id: snes64_bare
+  style: SNES 64
+  tier: SNES 64
+  resolution: "64x75 native, x4"
+  headphones: "no (bone necklace)"
+  frames: x4
+  badge: Front-runner
+  note: 16-bit-style pixel base on a 64 px grid.
+- id: hibit128_hs
+  style: Hi-bit 128
+  tier: Hi-bit 128
+  resolution: "128x149 native, x2"
+  headphones: "yes"
+  frames: x2
+  note: Detailed hi-bit pixel base on a 128 px grid.
+- id: hibit128_bare
+  style: Hi-bit 128
+  tier: Hi-bit 128
+  resolution: "128x151 native, x2"
+  headphones: "no (bone necklace)"
+  frames: x2
+  note: Detailed hi-bit pixel base on a 128 px grid.
+- id: zimg_hibit_bare
+  style: Hi-bit (illustration)
+  tier: Wildcard
+  resolution: "71x75 native, x4"
+  headphones: "no (bone necklace)"
+  frames: x4
+  note: Smooth cel illustration, pixelized locally.
+- id: gameboy_hs
+  style: Game Boy
+  tier: Wildcard
+  resolution: "39x40 native, x8"
+  headphones: "yes"
+  frames: x8
+  note: v1 sprite through a 4-shade Game Boy palette filter.
+- id: arcade_hs
+  style: Arcade
+  tier: Wildcard
+  resolution: "68x78 native, x4"
+  headphones: "yes"
+  frames: x4
+  note: Arcade-cabinet filter treatment.
+- id: blackhair32_hs
+  style: Black hair 32
+  tier: Wildcard
+  resolution: "35x43 native, x7"
+  headphones: "yes"
+  frames: x7
+  note: Black-haired variant on a ~32 px grid.
+- id: controller_hs
+  style: Controller
+  tier: Wildcard
+  resolution: "40x50 native, x6"
+  headphones: "yes"
+  frames: x6
+  note: Variant holding a game controller.
+- id: chunky_hs
+  style: Chunky
+  tier: Wildcard
+  resolution: "38x38 native, x8"
+  headphones: "yes"
+  frames: x8
+  note: Chunky cel illustration, pixelized locally.
 - id: v1
   style: v1 (original)
-  resolution: native 39x40, shown 312x320
+  tier: v1 original
+  resolution: "39x40 native, x8"
   headphones: "no"
   gif: assets/v1/caveman_loop.gif
   sheet: assets/v1/caveman_contact_sheet.png
+  note: The first full set; its 8 PNGtuber states are on the home page.

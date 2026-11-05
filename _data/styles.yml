@@ -1,0 +1,8 @@
+# One entry per style. build_showcase.py regenerates showcase.md from this list.
+# Paths are relative to the repo root.
+- id: v1
+  style: v1 (original)
+  resolution: native 39x40, shown 312x320
+  headphones: "no"
+  gif: assets/v1/caveman_loop.gif
+  sheet: assets/v1/caveman_contact_sheet.png

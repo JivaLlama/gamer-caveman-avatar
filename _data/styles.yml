@@ -62,49 +62,49 @@
   style: Hi-bit (illustration)
   tier: Wildcard
   resolution: "71x75 native, x4"
-  headphones: "no (bone necklace)"
+  headphones: "no (bone-and-tooth necklace)"
   frames: x4
-  note: Smooth cel illustration, pixelized locally.
+  note: "Smooth cel illustration, pixelized locally. Bone-and-tooth necklace; the best no-headset look."
 - id: gameboy_hs
   style: Game Boy
   tier: Wildcard
   resolution: "39x40 native, x8"
   headphones: "yes"
   frames: x8
-  note: v1 sprite through a 4-shade Game Boy palette filter.
+  note: "The v1 sprite recoloured to the 4-shade Game Boy green palette. Low contrast, so the face gets lost."
 - id: arcade_hs
   style: Arcade
   tier: Wildcard
   resolution: "68x78 native, x4"
   headphones: "yes"
   frames: x4
-  note: Arcade-cabinet filter treatment.
+  note: "A CRT arcade look, with a bold black outline and punchier colour. Pops on dark overlays."
 - id: blackhair32_hs
   style: Black hair 32
   tier: Wildcard
   resolution: "35x43 native, x7"
   headphones: "yes"
   frames: x7
-  note: Black-haired variant on a ~32 px grid.
+  note: "A 32-bit-era take with black hair and a blue headset, on a ~35x43 grid."
 - id: controller_hs
   style: Controller
   tier: Wildcard
   resolution: "40x50 native, x6"
   headphones: "yes"
   frames: x6
-  note: Variant holding a game controller.
+  note: "The v1 guy holding an NES-style controller. The most 'gamer' pose, good as an alternate."
 - id: chunky_hs
   style: Chunky
   tier: Wildcard
   resolution: "38x38 native, x8"
   headphones: "yes"
   frames: x8
-  note: Chunky cel illustration, pixelized locally.
+  note: "Chunky cartoon-caveman proportions with a big jaw. Furthest from the approved design."
 - id: v1
   style: v1 (original)
   tier: v1 original
   resolution: "39x40 native, x8"
-  headphones: "no"
+  headphones: "yes"
   gif: assets/v1/caveman_loop.gif
   sheet: assets/v1/caveman_contact_sheet.png
   note: The first full set; its 8 PNGtuber states are on the home page.

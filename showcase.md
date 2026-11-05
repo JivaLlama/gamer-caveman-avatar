@@ -98,43 +98,43 @@ All 14 style variants, animating in sync, then the labelled overview sheet.
 <div class="card">
 <img src="assets/styles/zimg_hibit_bare/zimg_hibit_bare_anim.gif" alt="zimg_hibit_bare animation">
 <h3>Hi-bit (illustration) <code>zimg_hibit_bare</code></h3>
-<p><b>Resolution:</b> 71x75 native, x4<br><b>Headphones:</b> no (bone necklace)</p>
-<p class="note">Smooth cel illustration, pixelized locally.</p>
+<p><b>Resolution:</b> 71x75 native, x4<br><b>Headphones:</b> no (bone-and-tooth necklace)</p>
+<p class="note">Smooth cel illustration, pixelized locally. Bone-and-tooth necklace; the best no-headset look.</p>
 <div class="frames"><img src="assets/styles/zimg_hibit_bare/idle_x4.png" alt="idle" title="idle"><img src="assets/styles/zimg_hibit_bare/blink_x4.png" alt="blink" title="blink"><img src="assets/styles/zimg_hibit_bare/talk_x4.png" alt="talk" title="talk"><img src="assets/styles/zimg_hibit_bare/talk_blink_x4.png" alt="talk_blink" title="talk_blink"><img src="assets/styles/zimg_hibit_bare/grin_x4.png" alt="grin" title="grin"></div>
 </div>
 <div class="card">
 <img src="assets/styles/gameboy_hs/gameboy_hs_anim.gif" alt="gameboy_hs animation">
 <h3>Game Boy <code>gameboy_hs</code></h3>
 <p><b>Resolution:</b> 39x40 native, x8<br><b>Headphones:</b> yes</p>
-<p class="note">v1 sprite through a 4-shade Game Boy palette filter.</p>
+<p class="note">The v1 sprite recoloured to the 4-shade Game Boy green palette. Low contrast, so the face gets lost.</p>
 <div class="frames"><img src="assets/styles/gameboy_hs/idle_x8.png" alt="idle" title="idle"><img src="assets/styles/gameboy_hs/blink_x8.png" alt="blink" title="blink"><img src="assets/styles/gameboy_hs/talk_x8.png" alt="talk" title="talk"><img src="assets/styles/gameboy_hs/talk_blink_x8.png" alt="talk_blink" title="talk_blink"><img src="assets/styles/gameboy_hs/grin_x8.png" alt="grin" title="grin"></div>
 </div>
 <div class="card">
 <img src="assets/styles/arcade_hs/arcade_hs_anim.gif" alt="arcade_hs animation">
 <h3>Arcade <code>arcade_hs</code></h3>
 <p><b>Resolution:</b> 68x78 native, x4<br><b>Headphones:</b> yes</p>
-<p class="note">Arcade-cabinet filter treatment.</p>
+<p class="note">A CRT arcade look, with a bold black outline and punchier colour. Pops on dark overlays.</p>
 <div class="frames"><img src="assets/styles/arcade_hs/idle_x4.png" alt="idle" title="idle"><img src="assets/styles/arcade_hs/blink_x4.png" alt="blink" title="blink"><img src="assets/styles/arcade_hs/talk_x4.png" alt="talk" title="talk"><img src="assets/styles/arcade_hs/talk_blink_x4.png" alt="talk_blink" title="talk_blink"><img src="assets/styles/arcade_hs/grin_x4.png" alt="grin" title="grin"></div>
 </div>
 <div class="card">
 <img src="assets/styles/blackhair32_hs/blackhair32_hs_anim.gif" alt="blackhair32_hs animation">
 <h3>Black hair 32 <code>blackhair32_hs</code></h3>
 <p><b>Resolution:</b> 35x43 native, x7<br><b>Headphones:</b> yes</p>
-<p class="note">Black-haired variant on a ~32 px grid.</p>
+<p class="note">A 32-bit-era take with black hair and a blue headset, on a ~35x43 grid.</p>
 <div class="frames"><img src="assets/styles/blackhair32_hs/idle_x7.png" alt="idle" title="idle"><img src="assets/styles/blackhair32_hs/blink_x7.png" alt="blink" title="blink"><img src="assets/styles/blackhair32_hs/talk_x7.png" alt="talk" title="talk"><img src="assets/styles/blackhair32_hs/talk_blink_x7.png" alt="talk_blink" title="talk_blink"><img src="assets/styles/blackhair32_hs/grin_x7.png" alt="grin" title="grin"></div>
 </div>
 <div class="card">
 <img src="assets/styles/controller_hs/controller_hs_anim.gif" alt="controller_hs animation">
 <h3>Controller <code>controller_hs</code></h3>
 <p><b>Resolution:</b> 40x50 native, x6<br><b>Headphones:</b> yes</p>
-<p class="note">Variant holding a game controller.</p>
+<p class="note">The v1 guy holding an NES-style controller. The most 'gamer' pose, good as an alternate.</p>
 <div class="frames"><img src="assets/styles/controller_hs/idle_x6.png" alt="idle" title="idle"><img src="assets/styles/controller_hs/blink_x6.png" alt="blink" title="blink"><img src="assets/styles/controller_hs/talk_x6.png" alt="talk" title="talk"><img src="assets/styles/controller_hs/talk_blink_x6.png" alt="talk_blink" title="talk_blink"><img src="assets/styles/controller_hs/grin_x6.png" alt="grin" title="grin"></div>
 </div>
 <div class="card">
 <img src="assets/styles/chunky_hs/chunky_hs_anim.gif" alt="chunky_hs animation">
 <h3>Chunky <code>chunky_hs</code></h3>
 <p><b>Resolution:</b> 38x38 native, x8<br><b>Headphones:</b> yes</p>
-<p class="note">Chunky cel illustration, pixelized locally.</p>
+<p class="note">Chunky cartoon-caveman proportions with a big jaw. Furthest from the approved design.</p>
 <div class="frames"><img src="assets/styles/chunky_hs/idle_x8.png" alt="idle" title="idle"><img src="assets/styles/chunky_hs/blink_x8.png" alt="blink" title="blink"><img src="assets/styles/chunky_hs/talk_x8.png" alt="talk" title="talk"><img src="assets/styles/chunky_hs/talk_blink_x8.png" alt="talk_blink" title="talk_blink"><img src="assets/styles/chunky_hs/grin_x8.png" alt="grin" title="grin"></div>
 </div>
 </div>
@@ -145,7 +145,7 @@ All 14 style variants, animating in sync, then the labelled overview sheet.
 <div class="card">
 <img src="assets/v1/caveman_loop.gif" alt="v1 animation">
 <h3>v1 (original) <code>v1</code></h3>
-<p><b>Resolution:</b> 39x40 native, x8<br><b>Headphones:</b> no</p>
+<p><b>Resolution:</b> 39x40 native, x8<br><b>Headphones:</b> yes</p>
 <p class="note">The first full set; its 8 PNGtuber states are on the home page.</p>
 <img src="assets/v1/caveman_contact_sheet.png" alt="v1 contact sheet">
 </div>
